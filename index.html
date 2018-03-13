@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/slick-theme.css">
+    <link rel="stylesheet" href="public/css/slick.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=vietnamese" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="main-content-header">
+            <div class="select-langue">
+                <div>
+                    <a href="#">
+                        <img src="public/images/icon/viet_nam.png"> Tiếng Việt</a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="public/images/icon/usa.png"> English</a>
+                </div>
+
+            </div>
+            <div class="logo-header">
+                <a href="#">
+                    <img src="public/images/logo.png" />
+                </a>
+            </div>
+            <div class="menu-nav-header">
+                <div class="menu-item">
+                    <a href="#">TRANG CHỦ</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">GIỚI THIỆU</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">ĐỒNG HÀNH CÙNG NHÀ NÔNG</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">SẢN PHẨM
+                        <i>
+                            <img src="public/images/icon/icon_drop_menu.png">
+                        </i>
+                    </a>
+                    <div class="menu-child">
+                        <div class="menu-drop">
+                            <ul>
+                                <li class="menu-item-child">
+                                    <a>Phân bón 1</a>
+                                </li>
+                                <li class="menu-item-child">
+                                    <a>Phân bón 1</a>
+                                </li>
+                                <li class="menu-item-child">
+                                    <a>Phân bón 1</a>
+                                </li>
+                                <li class="menu-item-child">
+                                    <a>Phân bón 1</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <a href="#">HỎI ĐÁP</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">TRUYỀN THÔNG</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">CỔ ĐÔNG</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#">LIÊN HỆ</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="slider">
+        <div class="slider-content">
+            <div class="slider-img">
+                <div class="slider-item">
+                    <img alt="phan bon 1" data-des="mo ta 1" src="public/images/bg_slider.jpg">
+                </div>
+                <div class="slider-item">
+                    <img alt="phan bon 2" data-des="mo ta 2" src="public/images/bg_slider.jpg">
+                </div>
+                <div class="slider-item">
+                    <img alt="phan bon 3" data-des="mo ta 3" src="public/images/bg_slider.jpg">
+                </div>
+                <div class="slider-item">
+                    <img alt="phan bon 4" data-des="mo ta 4" src="public/images/bg_slider.jpg">
+                </div>
+
+            </div>
+            <div class="desciption-slider">
+                <div id="title-slider" class="title">title</div>
+                <div id="des-slider" class="des">mo ta</div>
+
+            </div>
+            <button class="btn-prev" onclick="getForwardImage('prev')">
+                <img src="public/images/icon/prev_slider.png">
+            </button>
+            <button class="btn-next" onclick="getForwardImage('next')">
+                <img src="public/images/icon/next_slider.png">
+            </button>
+            <div class="border-bottom-slider">
+                <img src="public/images/border_slide.png" />
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-content">
+            <div class="main-col-1">
+                <div class="category-news">
+                    <div class="category-title bg-green">
+                        <div>
+                            <img src="public/images/icon/dot_category.png">
+                            <a href="#">Tin hoạt động công ty </a>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-item-1">
+                            <div class="item-thumbnail-1">
+                                <a href="#">
+                                    <img src="public/images/item_news_top.jpg">
+                                </a>
+                            </div>
+                            <div class="item-des-1">
+                                <div class="item-title-1">
+                                    <a href="#">Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường</a>
+                                </div>
+                                <div class="des-1">
+                                    <p>Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET Thương
+                                        hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET - Thương hiệu sản phẩm thân</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item-2">
+                            <div class="item-title-2">
+                                <a href="#">6 năm liền có mặt trong BXH 1000 DN lớn nhất VN</a>
+                            </div>
+                            <div class="content-item-2">
+                                <div class="thumbnail-item-2">
+                                    <img src="public/images/item_news_child.jpg">
+                                </div>
+                                <div class="des-2">
+                                    <p>
+                                        Với vị trí xếp hạng 200/1000 được công bố sd vào năm 2015 (theo báo cáo tài chính hợp nhất), Công ty CP Phân bón Bình Điền
+                                        tự hào đã ghi dấu ấn 6 năm liền (2009-2014) có mặt ở thứ hạng cao trong bảng xếp
+                                        hạng (BXH) V1000 - 1000 Doanh ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item-3">
+                            <a>
+                                <img src="public/images/icon/dot_title.png"> TRAO HỌC BỔNG “VÌ TƯƠNG LAI VIỆT NAM” - Khu vực TP. Hồ Chí Minh
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="category-news">
+                    <div class="category-title bg-blue">
+                        <div>
+                            <img src="public/images/icon/dot_category.png">
+                            <a href="#">Tin hoạt động công ty </a>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-item-1">
+                            <div class="item-thumbnail-1">
+                                <a href="#">
+                                    <img src="public/images/item_news_top.jpg">
+                                </a>
+                            </div>
+                            <div class="item-des-1">
+                                <div class="item-title-1">
+                                    <a href="#">Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường</a>
+                                </div>
+                                <div class="des-1">
+                                    <p>Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET Thương
+                                        hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET - Thương hiệu sản phẩm thân</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item-2">
+                            <div class="item-title-2">
+                                <a href="#">6 năm liền có mặt trong BXH 1000 DN lớn nhất VN</a>
+                            </div>
+                            <div class="content-item-2">
+                                <div class="thumbnail-item-2">
+                                    <img src="public/images/item_news_child.jpg">
+                                </div>
+                                <div class="des-2">
+                                    <p>
+                                        Với vị trí xếp hạng 200/1000 được công bố sd vào năm 2015 (theo báo cáo tài chính hợp nhất), Công ty CP Phân bón Bình Điền
+                                        tự hào đã ghi dấu ấn 6 năm liền (2009-2014) có mặt ở thứ hạng cao trong bảng xếp
+                                        hạng (BXH) V1000 - 1000 Doanh ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item-3">
+                            <a>
+                                <img src="public/images/icon/dot_title.png"> TRAO HỌC BỔNG “VÌ TƯƠNG LAI VIỆT NAM” - Khu vực TP. Hồ Chí Minh
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="category-news">
+                    <div class="category-title bg-blue">
+                        <div>
+                            <img src="public/images/icon/dot_category.png">
+                            <a href="#">Tin hoạt động công ty </a>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-item-1">
+                            <div class="item-thumbnail-1">
+                                <a href="#">
+                                    <img src="public/images/item_news_top.jpg">
+                                </a>
+                            </div>
+                            <div class="item-des-1">
+                                <div class="item-title-1">
+                                    <a href="#">Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường</a>
+                                </div>
+                                <div class="des-1">
+                                    <p>Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET Thương
+                                        hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET - Thương hiệu sản phẩm thân</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item-2">
+                            <div class="item-title-2">
+                                <a href="#">6 năm liền có mặt trong BXH 1000 DN lớn nhất VN</a>
+                            </div>
+                            <div class="content-item-2">
+                                <div class="thumbnail-item-2">
+                                    <img src="public/images/item_news_child.jpg">
+                                </div>
+                                <div class="des-2">
+                                    <p>
+                                        Với vị trí xếp hạng 200/1000 được công bố sd vào năm 2015 (theo báo cáo tài chính hợp nhất), Công ty CP Phân bón Bình Điền
+                                        tự hào đã ghi dấu ấn 6 năm liền (2009-2014) có mặt ở thứ hạng cao trong bảng xếp
+                                        hạng (BXH) V1000 - 1000 Doanh ...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item-3">
+                            <a>
+                                <img src="public/images/icon/dot_title.png"> TRAO HỌC BỔNG “VÌ TƯƠNG LAI VIỆT NAM” - Khu vực TP. Hồ Chí Minh
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="category-news">
+                    <div class="category-title bg-blue">
+                        <div>
+                            <img src="public/images/icon/dot_category.png">
+                            <a href="#">Tin hoạt động công ty </a>
+                        </div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-item-1">
+                            <div class="item-thumbnail-1">
+                                <a href="#">
+                                    <img src="public/images/item_news_top.jpg">
+                                </a>
+                            </div>
+                            <div class="item-des-1">
+                                <div class="item-title-1">
+                                    <a href="#">Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường</a>
+                                </div>
+                                <div class="des-1">
+                                    <p>Phân bón RUSVIET - Thương hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET Thương
+                                        hiệu sản phẩm thân thiện với môi trường Phân bón RUSVIET - Thương hiệu sản phẩm thân</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-news-group">
+                            <div class="news-group-col">
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png">Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png">Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png">Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                            </div>
+                            <div class="news-group-col">
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png">Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png">Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png">Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="item-news-group-2">
+                            <div class="news-group-col-2">
+                                <div class="category-title bg-blue">
+                                    <div>
+                                        <img src="public/images/icon/dot_category.png">
+                                        <a href="#">Tin hoạt động công ty </a>
+                                    </div>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                            </div>
+                            <div class="news-group-col-2">
+                                <div class="category-title bg-blue">
+                                    <div>
+                                        <img src="public/images/icon/dot_category.png">
+                                        <a href="#">Tin hoạt động công ty </a>
+                                    </div>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                                <div class="title-item-gr">
+                                    <a href="#">
+                                        <img src="public/images/icon/dot_title.png"> Bài hướng dẫn cách sử dụng phần bón số 1 dàn cho cây lúa</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-col-2">
+                <div class="category-news">
+                    <div class="category-title bg-red">
+                        <div>
+                            <img src="public/images/icon/dot_category.png">
+                            <a href="#">Tin hoạt động công ty </a>
+                        </div>
+                    </div>
+                    <div class="content-1">
+                        <div class="content-2">
+                            <div class="content-3">
+                                <img src="public/images/phan_bon.jpg" />
+                            </div>
+                            <div class="description-pro">
+                                <div class="title-pro">
+                                    Sản phẩm
+
+                                </div>
+                                <div class="des-pro">
+                                    Mô tả
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="category-news">
+                    <div class="category-title bg-blue">
+                        <div>
+                            <img src="public/images/icon/dot_category.png">
+                            <a href="#">Hình ảnh thực nghiệm </a>
+                        </div>
+                    </div>
+                    <div class="content-2">
+                        <div class="item-news-1">
+                            <div class="thumbnail-news">
+                                <a href="#">
+                                    <img src="public/images/cate_img_2.jpg" />
+                                </a>
+                            </div>
+                            <div class="title">
+                                <a href="#">[Video] Kết quả thực nghiệm phân bón hữu cơ Nano</a>
+
+                            </div>
+                            <div class="des">
+                                <p>Kết quả thực nghiệm đạt kết quả tốt.</p>
+
+                            </div>
+                        </div>
+                        <div class="list-news-child">
+                            <div class="title-item">
+                                <a href="#">
+                                    <img src="public/images/icon/dot_title.png"> [Hình ảnh] Kết quả thực nghiệm phân bón mói</a>
+                            </div>
+
+                        </div>
+                        <div class="list-news-child">
+                            <div class="title-item">
+                                <a href="#">
+                                    <img src="public/images/icon/dot_title.png">[Hình ảnh] Kết quả thực nghiệm phân bón mói</a>
+                            </div>
+
+                        </div>
+                        <div class="list-news-child">
+                            <div class="title-item">
+                                <a href="#">
+                                    <img src="public/images/icon/dot_title.png">[Hình ảnh] Kết quả thực nghiệm phân bón mói</a>
+                            </div>
+
+                        </div>
+                        <div class="list-news-child">
+                            <div class="title-item">
+                                <a href="#">
+                                    <img src="public/images/icon/dot_title.png"> [Hình ảnh] Kết quả thực nghiệm phân bón mói</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="category-news">
+                    <div class="category-title bg-blue">
+                        <div>
+                            <img src="public/images/icon/dot_category.png">
+                            <a href="#">Hỏi đáp </a>
+                        </div>
+                    </div>
+                    <div class="content-3">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="public/images/cate_img_3.jpg">
+                            </a>
+                        </div>
+                        <div class="des-question">
+                            <p>
+                                Bình Điền giải đáp các câu hỏi về việc sử dụng phân bón và phòng trừ sâu bệnh cho nhà nông.
+                            </p>
+
+                        </div>
+                        <div class="select-question">
+                            <button>Đặt câu hỏi</button>
+                            <button>Xem câu hỏi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-news-2">
+                    <div class="title-cate">
+                        THẾ GIỚI HOA
+                    </div>
+                    <div class="item">
+                        <div class="thumbnail">
+                            <a href="#">
+                                <img src="" />
+
+                            </a>
+                        </div>
+                        <div class="title">
+                            <a href="#">
+                                Hoa tóc tiên
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-col-3">
+
+            </div>
+        </div>
+    </div>
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/slick.min.js"></script>
+    <script src="public/js/custom.js"></script>
+</body>
+
+</html>
