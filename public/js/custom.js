@@ -1,6 +1,7 @@
 $(".slider-img").slick({
   dots: true,
   arrows: false,
+    autoplay:true
 });
 
 function getForwardImage(status){
