@@ -207,14 +207,216 @@ a {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between; }
-    .main .main-content .main-col-1 {
-      width: 500px; }
-      .main .main-content .main-col-1 .category-news {
-        margin-bottom: 20px; }
-        .main .main-content .main-col-1 .category-news .category-title {
+    box-sizing: border-box; }
+    .main .main-content .main-content-1 {
+      display: flex;
+      justify-content: space-between; }
+      .main .main-content .main-content-1 .main-col-1 {
+        width: 500px; }
+        .main .main-content .main-content-1 .main-col-1 .category-news {
+          margin-bottom: 20px; }
+          .main .main-content .main-content-1 .main-col-1 .category-news .category-title {
+            border-radius: 2px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 33px;
+            font-family: "Roboto";
+            font-weight: 600;
+            font-size: 15px;
+            position: relative; }
+            .main .main-content .main-content-1 .main-col-1 .category-news .category-title div {
+              display: flex; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .category-title div img {
+                margin-left: 8px;
+                margin-right: 7px; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .category-title div a {
+                color: white; }
+          .main .main-content .main-content-1 .main-col-1 .category-news .category-title.bg-green {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#057608+0,0db019+50,007608+100 */
+            background: #057608;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #057608 0%, #0db019 50%, #007608 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #057608 0%, #0db019 50%, #007608 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #057608 0%, #0db019 50%, #007608 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#057608', endColorstr='#007608',GradientType=1 );
+            /* IE6-9 */ }
+          .main .main-content .main-content-1 .main-col-1 .category-news .category-title.bg-blue {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353e79+0,4c59b0+50,353e79+100 */
+            background: #353e79;
+            /* Old browsers */
+            background: -moz-linear-gradient(left, #353e79 0%, #4c59b0 50%, #353e79 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #353e79 0%, #4c59b0 50%, #353e79 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #353e79 0%, #4c59b0 50%, #353e79 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', endColorstr='#353e79',GradientType=1 );
+            /* IE6-9 */ }
+          .main .main-content .main-content-1 .main-col-1 .category-news .category-title.bg-red {
+            background-color: #e43605; }
+          .main .main-content .main-content-1 .main-col-1 .category-news .category-title::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 33px;
+            right: 0;
+            background-image: url("../images/bg_title.png");
+            background-repeat: no-repeat; }
+          .main .main-content .main-content-1 .main-col-1 .category-news .news-content {
+            margin-top: 10px; }
+            .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-1 {
+              display: flex;
+              justify-content: flex-start; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-1 .item-thumbnail-1 {
+                width: 195px;
+                margin-right: 10px; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-1 .item-thumbnail-1 a img {
+                  width: 100%; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-1 .item-des-1 {
+                width: 297px; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-1 .item-des-1 .item-title-1 a {
+                  font-family: Arial;
+                  font-size: 14px;
+                  color: rgb 61, 70, 139;
+                  line-height: 18px;
+                  font-weight: bold;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  -webkit-line-clamp: 2;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-1 .item-des-1 .des-1 p {
+                  margin: 10px 0 0 0;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 12px;
+                  line-height: 18px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  -webkit-line-clamp: 4;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical; }
+            .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-2 {
+              margin-top: 13px;
+              margin-bottom: 11px; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-2 .item-title-2 a {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 1;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                font-size: 13px;
+                font-weight: 600;
+                color: rgb 61, 70, 139;
+                font-family: Arial, Helvetica, sans-serif; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-2 .content-item-2 {
+                margin-top: 17px;
+                display: flex;
+                justify-content: flex-start; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-2 .content-item-2 .thumbnail-item-2 {
+                  width: 140px;
+                  margin-right: 10px; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-2 .content-item-2 .des-2 {
+                  width: 340px; }
+                  .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-2 .content-item-2 .des-2 p {
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    line-height: 18px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 5;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical; }
+            .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-3 {
+              display: flex; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-3 img {
+                margin-right: 5px; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-3 a {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                color: #3d468b; }
+            .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group {
+              margin-top: 10px;
+              padding: 3px 10px 10px 10px;
+              box-sizing: border-box;
+              border-bottom: 1px solid #cccc;
+              display: flex;
+              justify-content: space-between;
+              /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebeb+0,353e79+100&1+0,0+100 */
+              background: -moz-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
+              /* FF3.6-15 */
+              background: -webkit-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
+              /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to bottom, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
+              /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#00353e79',GradientType=0 );
+              /* IE6-9 */ }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group .news-group-col {
+                width: 225px; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group .news-group-col .title-item-gr {
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  border-bottom: 1px dotted #cccc; }
+                  .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group .news-group-col .title-item-gr a {
+                    padding-left: 10px;
+                    font-family: Arial;
+                    font-size: 12px;
+                    color: #2a2e4c;
+                    position: relative;
+                    display: block;
+                    line-height: 16px; }
+                    .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group .news-group-col .title-item-gr a img {
+                      position: absolute;
+                      top: 5px;
+                      left: 0px; }
+            .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 {
+              margin-top: 18px;
+              display: flex;
+              justify-content: space-between; }
+              .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 {
+                width: 240px; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title {
+                  border-radius: 2px;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  height: 33px;
+                  font-family: "Roboto";
+                  font-weight: 600;
+                  font-size: 15px; }
+                  .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title div {
+                    display: flex; }
+                    .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title div img {
+                      margin-left: 8px;
+                      margin-right: 7px; }
+                    .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title div a {
+                      color: white; }
+                .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .title-item-gr {
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  border-bottom: 1px dotted #cccc; }
+                  .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .title-item-gr a {
+                    padding-left: 10px;
+                    font-family: Arial;
+                    font-size: 12px;
+                    color: #3d468b;
+                    position: relative;
+                    display: block;
+                    line-height: 16px; }
+                    .main .main-content .main-content-1 .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .title-item-gr a img {
+                      position: absolute;
+                      top: 5px;
+                      left: 0px; }
+      .main .main-content .main-content-1 .main-col-2 {
+        width: 290px; }
+        .main .main-content .main-content-1 .main-col-2 .category-title {
           border-radius: 2px;
           display: flex;
           justify-content: flex-start;
@@ -224,14 +426,14 @@ a {
           font-weight: 600;
           font-size: 15px;
           position: relative; }
-          .main .main-content .main-col-1 .category-news .category-title div {
+          .main .main-content .main-content-1 .main-col-2 .category-title div {
             display: flex; }
-            .main .main-content .main-col-1 .category-news .category-title div img {
+            .main .main-content .main-content-1 .main-col-2 .category-title div img {
               margin-left: 8px;
               margin-right: 7px; }
-            .main .main-content .main-col-1 .category-news .category-title div a {
+            .main .main-content .main-content-1 .main-col-2 .category-title div a {
               color: white; }
-        .main .main-content .main-col-1 .category-news .category-title.bg-green {
+        .main .main-content .main-content-1 .main-col-2 .category-title.bg-green {
           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#057608+0,0db019+50,007608+100 */
           background: #057608;
           /* Old browsers */
@@ -243,7 +445,7 @@ a {
           /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#057608', endColorstr='#007608',GradientType=1 );
           /* IE6-9 */ }
-        .main .main-content .main-col-1 .category-news .category-title.bg-blue {
+        .main .main-content .main-content-1 .main-col-2 .category-title.bg-blue {
           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353e79+0,4c59b0+50,353e79+100 */
           background: #353e79;
           /* Old browsers */
@@ -255,9 +457,9 @@ a {
           /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', endColorstr='#353e79',GradientType=1 );
           /* IE6-9 */ }
-        .main .main-content .main-col-1 .category-news .category-title.bg-red {
+        .main .main-content .main-content-1 .main-col-2 .category-title.bg-red {
           background-color: #e43605; }
-        .main .main-content .main-col-1 .category-news .category-title::before {
+        .main .main-content .main-content-1 .main-col-2 .category-title::before {
           position: absolute;
           content: '';
           top: 0;
@@ -266,327 +468,333 @@ a {
           right: 0;
           background-image: url("../images/bg_title.png");
           background-repeat: no-repeat; }
-        .main .main-content .main-col-1 .category-news .news-content {
-          margin-top: 10px; }
-          .main .main-content .main-col-1 .category-news .news-content .news-item-1 {
-            display: flex;
-            justify-content: flex-start; }
-            .main .main-content .main-col-1 .category-news .news-content .news-item-1 .item-thumbnail-1 {
-              width: 195px;
-              margin-right: 10px; }
-              .main .main-content .main-col-1 .category-news .news-content .news-item-1 .item-thumbnail-1 a img {
-                width: 100%; }
-            .main .main-content .main-col-1 .category-news .news-content .news-item-1 .item-des-1 {
-              width: 297px; }
-              .main .main-content .main-col-1 .category-news .news-content .news-item-1 .item-des-1 .item-title-1 a {
+        .main .main-content .main-content-1 .main-col-2 .category-news:not(:first-child) {
+          margin-top: 15px; }
+        .main .main-content .main-content-1 .main-col-2 .content-1 {
+          margin-top: 5px;
+          padding: 5px 5px 0 5px;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebeb+0,353e79+100&1+0,0+100 */
+          background: -moz-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#00353e79',GradientType=0 );
+          /* IE6-9 */ }
+          .main .main-content .main-content-1 .main-col-2 .content-1 .content-2 {
+            padding: 5px 5px 0 5px;
+            background-color: #bb0700;
+            text-align: center;
+            color: white; }
+            .main .main-content .main-content-1 .main-col-2 .content-1 .content-2 .content-3 img {
+              width: 100%; }
+            .main .main-content .main-content-1 .main-col-2 .content-1 .content-2 .description-pro {
+              height: 53px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; }
+              .main .main-content .main-content-1 .main-col-2 .content-1 .content-2 .description-pro .title-pro {
+                font-size: 13px;
                 font-family: Arial;
-                font-size: 14px;
-                color: rgb 61, 70, 139;
-                line-height: 18px;
-                font-weight: bold;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 2;
-                display: -webkit-box;
-                -webkit-box-orient: vertical; }
-              .main .main-content .main-col-1 .category-news .news-content .news-item-1 .item-des-1 .des-1 p {
-                margin: 10px 0 0 0;
-                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+                margin-bottom: 8px; }
+              .main .main-content .main-content-1 .main-col-2 .content-1 .content-2 .description-pro .des-pro {
                 font-size: 12px;
-                line-height: 18px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-                display: -webkit-box;
-                -webkit-box-orient: vertical; }
-          .main .main-content .main-col-1 .category-news .news-content .news-item-2 {
-            margin-top: 13px;
-            margin-bottom: 11px; }
-            .main .main-content .main-col-1 .category-news .news-content .news-item-2 .item-title-2 a {
-              overflow: hidden;
-              text-overflow: ellipsis;
-              -webkit-line-clamp: 1;
-              display: -webkit-box;
-              -webkit-box-orient: vertical;
-              font-size: 13px;
-              font-weight: 600;
-              color: rgb 61, 70, 139;
-              font-family: Arial, Helvetica, sans-serif; }
-            .main .main-content .main-col-1 .category-news .news-content .news-item-2 .content-item-2 {
-              margin-top: 17px;
+                font-family: Tahoma; }
+        .main .main-content .main-content-1 .main-col-2 .content-2 {
+          padding-left: 10px;
+          padding-right: 10px; }
+          .main .main-content .main-content-1 .main-col-2 .content-2 .item-news-1 {
+            margin-top: 5px; }
+            .main .main-content .main-content-1 .main-col-2 .content-2 .item-news-1 .thumnail-news a img {
+              width: 100%; }
+            .main .main-content .main-content-1 .main-col-2 .content-2 .item-news-1 .title {
+              margin-top: 8px; }
+              .main .main-content .main-content-1 .main-col-2 .content-2 .item-news-1 .title a {
+                font-size: 14px;
+                font-weight: 600;
+                color: #3d468b; }
+            .main .main-content .main-content-1 .main-col-2 .content-2 .item-news-1 .des p {
+              font-family: Arial;
+              margin-top: 8px;
+              font-size: 12px;
+              color: #6b6b6b; }
+          .main .main-content .main-content-1 .main-col-2 .content-2 .list-news-child .title-item {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            border-top: 1px dotted #cccc; }
+            .main .main-content .main-content-1 .main-col-2 .content-2 .list-news-child .title-item a {
+              padding-left: 10px;
+              font-family: Arial;
+              font-size: 12px;
+              color: #3d468b;
+              position: relative;
+              display: block;
+              line-height: 16px; }
+              .main .main-content .main-content-1 .main-col-2 .content-2 .list-news-child .title-item a img {
+                position: absolute;
+                top: 5px;
+                left: 0px; }
+        .main .main-content .main-content-1 .main-col-2 .content-3 .thumbnail {
+          margin-top: 7px; }
+          .main .main-content .main-content-1 .main-col-2 .content-3 .thumbnail a img {
+            width: 100%; }
+        .main .main-content .main-content-1 .main-col-2 .content-3 .des-question {
+          margin-top: 10px; }
+          .main .main-content .main-content-1 .main-col-2 .content-3 .des-question p {
+            margin: 0;
+            font-size: 13px;
+            font-family: Arial;
+            color: #515151;
+            line-height: 18px; }
+        .main .main-content .main-content-1 .main-col-2 .content-3 .select-question {
+          margin-top: 15px;
+          display: flex;
+          justify-content: space-between; }
+          .main .main-content .main-content-1 .main-col-2 .content-3 .select-question button {
+            width: 112px;
+            height: 33px;
+            font-size: 13px;
+            font-family: arial;
+            color: white; }
+          .main .main-content .main-content-1 .main-col-2 .content-3 .select-question button:first-child {
+            border-color: #a80600;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb2c26+0,9b0702+100 */
+            background: #cb2c26;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #cb2c26 0%, #9b0702 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #cb2c26 0%, #9b0702 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #cb2c26 0%, #9b0702 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb2c26', endColorstr='#9b0702',GradientType=0 );
+            /* IE6-9 */ }
+          .main .main-content .main-content-1 .main-col-2 .content-3 .select-question button:last-child {
+            border-color: #2e314a;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#505888+0,3a3e5d+99 */
+            background: #505888;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #505888 0%, #3a3e5d 99%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #505888 0%, #3a3e5d 99%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #505888 0%, #3a3e5d 99%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505888', endColorstr='#3a3e5d',GradientType=0 );
+            /* IE6-9 */ }
+        .main .main-content .main-content-1 .main-col-2 .category-news-2 {
+          border: 1px solid;
+          border-bottom-color: #d7d7d7;
+          border-right-color: #d7d7d7;
+          border-left-color: #d7d7d7;
+          border-top-color: #e4332d;
+          margin-top: 20px; }
+          .main .main-content .main-content-1 .main-col-2 .category-news-2 .title-cate {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-bottom: 1px solid #d7d7d7; }
+            .main .main-content .main-content-1 .main-col-2 .category-news-2 .title-cate p {
+              color: #97211c;
+              font-size: 14px;
+              font-family: Roboto;
+              font-weight: 300; }
+          .main .main-content .main-content-1 .main-col-2 .category-news-2 .list-item {
+            padding: 10px; }
+            .main .main-content .main-content-1 .main-col-2 .category-news-2 .list-item .item {
               display: flex;
               justify-content: flex-start; }
-              .main .main-content .main-col-1 .category-news .news-content .news-item-2 .content-item-2 .thumbnail-item-2 {
-                width: 140px;
+              .main .main-content .main-content-1 .main-col-2 .category-news-2 .list-item .item .thumbnail {
                 margin-right: 10px; }
-              .main .main-content .main-col-1 .category-news .news-content .news-item-2 .content-item-2 .des-2 {
-                width: 340px; }
-                .main .main-content .main-col-1 .category-news .news-content .news-item-2 .content-item-2 .des-2 p {
-                  margin: 0;
-                  font-family: Arial, Helvetica, sans-serif;
-                  font-size: 12px;
-                  line-height: 18px;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  -webkit-line-clamp: 5;
-                  display: -webkit-box;
-                  -webkit-box-orient: vertical; }
-          .main .main-content .main-col-1 .category-news .news-content .news-item-3 {
-            display: flex; }
-            .main .main-content .main-col-1 .category-news .news-content .news-item-3 img {
-              margin-right: 5px; }
-            .main .main-content .main-col-1 .category-news .news-content .news-item-3 a {
-              font-family: Arial, Helvetica, sans-serif;
+                .main .main-content .main-content-1 .main-col-2 .category-news-2 .list-item .item .thumbnail a img {
+                  width: 100%; }
+              .main .main-content .main-content-1 .main-col-2 .category-news-2 .list-item .item .title a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px; }
+            .main .main-content .main-content-1 .main-col-2 .category-news-2 .list-item .item:not(:first-child) {
+              margin-top: 10px; }
+      .main .main-content .main-content-1 .main-col-3 {
+        width: 290px; }
+        .main .main-content .main-content-1 .main-col-3 .form-search {
+          display: flex;
+          justify-content: flex-start;
+          height: 33px;
+          align-items: center;
+          border: 1px solid #d7d7d7;
+          border-radius: 5px; }
+          .main .main-content .main-content-1 .main-col-3 .form-search i {
+            margin-left: 10px;
+            margin-right: 10px; }
+          .main .main-content .main-content-1 .main-col-3 .form-search input {
+            border: none;
+            outline: none;
+            width: 240px; }
+        .main .main-content .main-content-1 .main-col-3 .table-price {
+          margin-top: 10px;
+          border: 1px solid;
+          border-top-color: #343c76;
+          border-right-color: #d7d7d7;
+          border-left-color: #d7d7d7;
+          border-bottom-color: #d7d7d7; }
+          .main .main-content .main-content-1 .main-col-3 .table-price .title-price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-bottom: 1px solid #d7d7d7; }
+            .main .main-content .main-content-1 .main-col-3 .table-price .title-price d
+            p {
+              font-size: 14px;
+              font-family: Roboto;
+              font-weight: 300;
+              color: #2b3265; }
+          .main .main-content .main-content-1 .main-col-3 .table-price .list-item-price {
+            padding: 10px; }
+            .main .main-content .main-content-1 .main-col-3 .table-price .list-item-price .item {
+              border-bottom: 1px solid #d7d7d7;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              margin-bottom: 10px;
               display: flex;
-              align-items: center;
-              font-size: 12px;
-              color: #3d468b; }
-          .main .main-content .main-col-1 .category-news .news-content .item-news-group {
-            margin-top: 10px;
-            padding: 3px 10px 10px 10px;
-            box-sizing: border-box;
-            border-bottom: 1px solid #cccc;
+              justify-content: space-between;
+              font-size: 13px;
+              font-weight: 100;
+              font-family: Arial, Helvetica, sans-serif; }
+              .main .main-content .main-content-1 .main-col-3 .table-price .list-item-price .item a {
+                color: #676767; }
+              .main .main-content .main-content-1 .main-col-3 .table-price .list-item-price .item span {
+                color: #676767; }
+            .main .main-content .main-content-1 .main-col-3 .table-price .list-item-price .show-more {
+              display: flex;
+              justify-content: flex-end; }
+              .main .main-content .main-content-1 .main-col-3 .table-price .list-item-price .show-more a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 11px;
+                font-style: italic; }
+        .main .main-content .main-content-1 .main-col-3 .news-col-3 {
+          margin-top: 10px;
+          border: 1px solid;
+          border-top-color: #343c76;
+          border-right-color: #d7d7d7;
+          border-left-color: #d7d7d7;
+          border-bottom-color: #d7d7d7; }
+          .main .main-content .main-content-1 .main-col-3 .news-col-3 .title-col-news {
+            border-bottom: 1px solid #d7d7d7;
+            height: 40px;
             display: flex;
-            justify-content: space-between;
-            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebeb+0,353e79+100&1+0,0+100 */
-            background: -moz-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#00353e79',GradientType=0 );
-            /* IE6-9 */ }
-            .main .main-content .main-col-1 .category-news .news-content .item-news-group .news-group-col {
-              width: 225px; }
-              .main .main-content .main-col-1 .category-news .news-content .item-news-group .news-group-col .title-item-gr {
-                padding-top: 7px;
-                padding-bottom: 7px;
-                border-bottom: 1px dotted #cccc; }
-                .main .main-content .main-col-1 .category-news .news-content .item-news-group .news-group-col .title-item-gr a {
-                  padding-left: 10px;
-                  font-family: Arial;
-                  font-size: 12px;
-                  color: #2a2e4c;
-                  position: relative;
-                  display: block;
-                  line-height: 16px; }
-                  .main .main-content .main-col-1 .category-news .news-content .item-news-group .news-group-col .title-item-gr a img {
-                    position: absolute;
-                    top: 5px;
-                    left: 0px; }
-          .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 {
-            margin-top: 18px;
-            display: flex;
-            justify-content: space-between; }
-            .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 {
-              width: 240px; }
-              .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title {
-                border-radius: 2px;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                height: 33px;
-                font-family: "Roboto";
-                font-weight: 600;
-                font-size: 15px; }
-                .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title div {
-                  display: flex; }
-                  .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title div img {
-                    margin-left: 8px;
-                    margin-right: 7px; }
-                  .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .category-title div a {
-                    color: white; }
-              .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .title-item-gr {
-                padding-top: 7px;
-                padding-bottom: 7px;
-                border-bottom: 1px dotted #cccc; }
-                .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .title-item-gr a {
-                  padding-left: 10px;
-                  font-family: Arial;
-                  font-size: 12px;
-                  color: #3d468b;
-                  position: relative;
-                  display: block;
-                  line-height: 16px; }
-                  .main .main-content .main-col-1 .category-news .news-content .item-news-group-2 .news-group-col-2 .title-item-gr a img {
-                    position: absolute;
-                    top: 5px;
-                    left: 0px; }
-    .main .main-content .main-col-2 {
-      width: 290px; }
-      .main .main-content .main-col-2 .category-title {
-        border-radius: 2px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: 33px;
-        font-family: "Roboto";
-        font-weight: 600;
-        font-size: 15px;
-        position: relative; }
-        .main .main-content .main-col-2 .category-title div {
-          display: flex; }
-          .main .main-content .main-col-2 .category-title div img {
-            margin-left: 8px;
-            margin-right: 7px; }
-          .main .main-content .main-col-2 .category-title div a {
-            color: white; }
-      .main .main-content .main-col-2 .category-title.bg-green {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#057608+0,0db019+50,007608+100 */
-        background: #057608;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, #057608 0%, #0db019 50%, #007608 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #057608 0%, #0db019 50%, #007608 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #057608 0%, #0db019 50%, #007608 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#057608', endColorstr='#007608',GradientType=1 );
-        /* IE6-9 */ }
-      .main .main-content .main-col-2 .category-title.bg-blue {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353e79+0,4c59b0+50,353e79+100 */
-        background: #353e79;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, #353e79 0%, #4c59b0 50%, #353e79 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #353e79 0%, #4c59b0 50%, #353e79 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #353e79 0%, #4c59b0 50%, #353e79 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', endColorstr='#353e79',GradientType=1 );
-        /* IE6-9 */ }
-      .main .main-content .main-col-2 .category-title.bg-red {
-        background-color: #e43605; }
-      .main .main-content .main-col-2 .category-title::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        height: 33px;
-        right: 0;
-        background-image: url("../images/bg_title.png");
-        background-repeat: no-repeat; }
-      .main .main-content .main-col-2 .category-news:not(:first-child) {
-        margin-top: 15px; }
-      .main .main-content .main-col-2 .content-1 {
-        margin-top: 5px;
-        padding: 5px 5px 0 5px;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebebeb+0,353e79+100&1+0,0+100 */
-        background: -moz-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #ebebeb 0%, rgba(53, 62, 121, 0) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#00353e79',GradientType=0 );
-        /* IE6-9 */ }
-        .main .main-content .main-col-2 .content-1 .content-2 {
-          padding: 5px 5px 0 5px;
-          background-color: #bb0700;
-          text-align: center;
-          color: white; }
-          .main .main-content .main-col-2 .content-1 .content-2 .content-3 img {
-            width: 100%; }
-          .main .main-content .main-col-2 .content-1 .content-2 .description-pro {
-            height: 53px;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center; }
-            .main .main-content .main-col-2 .content-1 .content-2 .description-pro .title-pro {
-              font-size: 13px;
-              font-family: Arial;
-              font-weight: 600;
-              margin-bottom: 8px; }
-            .main .main-content .main-col-2 .content-1 .content-2 .description-pro .des-pro {
-              font-size: 12px;
-              font-family: Tahoma; }
-      .main .main-content .main-col-2 .content-2 {
-        padding-left: 10px;
-        padding-right: 10px; }
-        .main .main-content .main-col-2 .content-2 .item-news-1 {
-          margin-top: 5px; }
-          .main .main-content .main-col-2 .content-2 .item-news-1 .thumnail-news a img {
-            width: 100%; }
-          .main .main-content .main-col-2 .content-2 .item-news-1 .title {
-            margin-top: 8px; }
-            .main .main-content .main-col-2 .content-2 .item-news-1 .title a {
+            .main .main-content .main-content-1 .main-col-3 .news-col-3 .title-col-news p {
               font-size: 14px;
+              font-family: Roboto;
+              font-weight: 100;
+              color: #2b3265; }
+          .main .main-content .main-content-1 .main-col-3 .news-col-3 .item-news {
+            padding: 10px; }
+            .main .main-content .main-content-1 .main-col-3 .news-col-3 .item-news .thumbnail a img {
+              width: 100%; }
+            .main .main-content .main-content-1 .main-col-3 .news-col-3 .item-news .detail-news {
+              margin-top: 5px; }
+              .main .main-content .main-content-1 .main-col-3 .news-col-3 .item-news .detail-news .title-news a {
+                font-size: 14px;
+                font-weight: 600;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #3d468b; }
+              .main .main-content .main-content-1 .main-col-3 .news-col-3 .item-news .detail-news .description p {
+                font-size: 12px;
+                font-family: Arial;
+                color: #6b6b6b;
+                margin: 5px 0 0 0; }
+        .main .main-content .main-content-1 .main-col-3 .content-table-2 {
+          margin-top: 10px;
+          border: 1px solid;
+          border-top-color: #343c76;
+          border-right-color: #d7d7d7;
+          border-left-color: #d7d7d7;
+          border-bottom-color: #d7d7d7; }
+          .main .main-content .main-content-1 .main-col-3 .content-table-2 .title-table {
+            border-bottom: 1px solid #d7d7d7;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .main .main-content .main-content-1 .main-col-3 .content-table-2 .title-table p {
+              font-size: 14px;
+              font-family: Roboto;
+              font-weight: 300;
+              color: #97211c; }
+          .main .main-content .main-content-1 .main-col-3 .content-table-2 .table-content {
+            padding: 10px; }
+            .main .main-content .main-content-1 .main-col-3 .content-table-2 .table-content table {
+              width: 100%;
+              border-collapse: collapse; }
+              .main .main-content .main-content-1 .main-col-3 .content-table-2 .table-content table td, .main .main-content .main-content-1 .main-col-3 .content-table-2 .table-content table th {
+                font-size: 12px;
+                font-family: Arial, Helvetica, sans-serif;
+                border: 1px solid #d7d7d7;
+                padding: 5px;
+                text-align: center;
+                font-weight: 500; }
+        .main .main-content .main-content-1 .main-col-3 .content-4 {
+          margin-top: 10px;
+          border: 1px solid;
+          border-top-color: #343c76;
+          border-right-color: #d7d7d7;
+          border-left-color: #d7d7d7;
+          border-bottom-color: #d7d7d7; }
+          .main .main-content .main-content-1 .main-col-3 .content-4 .title {
+            border-bottom: 1px solid #d7d7d7;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .main .main-content .main-content-1 .main-col-3 .content-4 .title p {
+              font-size: 14px;
+              font-family: Roboto;
+              font-weight: 300;
+              color: #97211c; }
+          .main .main-content .main-content-1 .main-col-3 .content-4 .list-item {
+            padding: 10px; }
+            .main .main-content .main-content-1 .main-col-3 .content-4 .list-item .item {
+              width: 100%;
+              height: 100px;
+              background-color: #cfcfcf; }
+            .main .main-content .main-content-1 .main-col-3 .content-4 .list-item .item:not(:first-child) {
+              margin-top: 10px; }
+        .main .main-content .main-content-1 .main-col-3 .content-5 {
+          margin-top: 10px;
+          border: 1px solid;
+          border-top-color: #343c76;
+          border-right-color: #d7d7d7;
+          border-left-color: #d7d7d7;
+          border-bottom-color: #d7d7d7; }
+          .main .main-content .main-content-1 .main-col-3 .content-5 .title {
+            border-bottom: 1px solid #d7d7d7;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .main .main-content .main-content-1 .main-col-3 .content-5 .title p {
+              font-size: 14px;
+              font-family: Roboto;
+              font-weight: 300;
+              color: #97211c; }
+          .main .main-content .main-content-1 .main-col-3 .content-5 .list-item {
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start; }
+            .main .main-content .main-content-1 .main-col-3 .content-5 .list-item .item .thumbnail a img {
+              width: 100%; }
+            .main .main-content .main-content-1 .main-col-3 .content-5 .list-item .detail .title a {
+              font-size: 16px;
               font-weight: 600;
-              color: #3d468b; }
-          .main .main-content .main-col-2 .content-2 .item-news-1 .des p {
-            font-family: Arial;
-            margin-top: 8px;
-            font-size: 12px;
-            color: #6b6b6b; }
-        .main .main-content .main-col-2 .content-2 .list-news-child .title-item {
-          padding-top: 7px;
-          padding-bottom: 7px;
-          border-top: 1px dotted #cccc; }
-          .main .main-content .main-col-2 .content-2 .list-news-child .title-item a {
-            padding-left: 10px;
-            font-family: Arial;
-            font-size: 12px;
-            color: #3d468b;
-            position: relative;
-            display: block;
-            line-height: 16px; }
-            .main .main-content .main-col-2 .content-2 .list-news-child .title-item a img {
-              position: absolute;
-              top: 5px;
-              left: 0px; }
-      .main .main-content .main-col-2 .content-3 .thumbnail {
-        margin-top: 7px; }
-        .main .main-content .main-col-2 .content-3 .thumbnail a img {
-          width: 100%; }
-      .main .main-content .main-col-2 .content-3 .des-question {
-        margin-top: 10px; }
-        .main .main-content .main-col-2 .content-3 .des-question p {
-          margin: 0;
-          font-size: 13px;
-          font-family: Arial;
-          color: #515151;
-          line-height: 18px; }
-      .main .main-content .main-col-2 .content-3 .select-question {
-        margin-top: 15px;
-        display: flex;
-        justify-content: space-between; }
-        .main .main-content .main-col-2 .content-3 .select-question button {
-          width: 112px;
-          height: 33px;
-          font-size: 13px;
-          font-family: arial;
-          color: white; }
-        .main .main-content .main-col-2 .content-3 .select-question button:first-child {
-          border-color: #a80600;
-          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb2c26+0,9b0702+100 */
-          background: #cb2c26;
-          /* Old browsers */
-          background: -moz-linear-gradient(top, #cb2c26 0%, #9b0702 100%);
-          /* FF3.6-15 */
-          background: -webkit-linear-gradient(top, #cb2c26 0%, #9b0702 100%);
-          /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to bottom, #cb2c26 0%, #9b0702 100%);
-          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb2c26', endColorstr='#9b0702',GradientType=0 );
-          /* IE6-9 */ }
-        .main .main-content .main-col-2 .content-3 .select-question button:last-child {
-          border-color: #2e314a;
-          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#505888+0,3a3e5d+99 */
-          background: #505888;
-          /* Old browsers */
-          background: -moz-linear-gradient(top, #505888 0%, #3a3e5d 99%);
-          /* FF3.6-15 */
-          background: -webkit-linear-gradient(top, #505888 0%, #3a3e5d 99%);
-          /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to bottom, #505888 0%, #3a3e5d 99%);
-          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505888', endColorstr='#3a3e5d',GradientType=0 );
-          /* IE6-9 */ }
-    .main .main-content .main-col-3 {
-      width: 290px;
-      height: 200px;
-      background-color: blue; }
+              font-family: Roboto; }
+            .main .main-content .main-content-1 .main-col-3 .content-5 .list-item .detail .link-item a {
+              font-size: 13px;
+              font-family: Roboto; }
 
 /*# sourceMappingURL=style.css.map */
