@@ -8,6 +8,7 @@
         margin-right:auto;
         display: block;
         position: relative;
+        box-shadow: 0px 0px 4px 2px #100e0e;
         // box-shadow: -1px 2px 3px 3px #131111;
         
         .desciption-slider{
@@ -61,13 +62,7 @@
                }
            }
         }
-        .border-bottom-slider{
-            position: absolute;
-            right: 0;
-            left: 0;
-            bottom: -9px;
-            height: 15px;
-        }
+        
     }
 
 }

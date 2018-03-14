@@ -8,6 +8,8 @@ a {
   text-decoration: none; }
 
 .header {
+  z-index: 99;
+  position: relative;
   display: flex;
   justify-content: center;
   height: 113px;
@@ -42,6 +44,7 @@ a {
       .header .main-content-header .select-langue div {
         padding-right: 10px; }
         .header .main-content-header .select-langue div a {
+          font-family: Arial;
           display: flex;
           color: white;
           font-size: 11px; }
@@ -49,16 +52,22 @@ a {
             margin-right: 5px; }
     .header .main-content-header .menu-nav-header {
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      position: relative;
+      z-index: 10; }
       .header .main-content-header .menu-nav-header .menu-item {
         position: relative;
         font-size: 13px;
         font-family: Arial;
-        font-weight: bold;
         padding: 8px 18px;
         color: white; }
         .header .main-content-header .menu-nav-header .menu-item a {
-          color: white; }
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .header .main-content-header .menu-nav-header .menu-item a img {
+            margin-left: 5px; }
         .header .main-content-header .menu-nav-header .menu-item .menu-child {
           z-index: 999;
           position: absolute;
@@ -67,6 +76,7 @@ a {
           left: -5px;
           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#21a725+0,077509+100 */ }
           .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop {
+            box-shadow: 0px 2px 17px 1px #191823;
             position: relative;
             margin-top: 18px;
             border-radius: 4px;
@@ -84,14 +94,18 @@ a {
               list-style: none;
               padding: 8px 0 6px 0; }
               .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop ul li {
-                font-family: Tahoma;
-                font-size: 13px;
                 padding: 10px 18px 12px 18px;
                 position: relative;
                 display: block; }
+                .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop ul li a {
+                  font-weight: 500;
+                  font-size: 13px;
+                  font-family: Tahoma; }
+              .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop ul li:not(:last-child) {
+                margin-bottom: 2px; }
               .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop ul li:not(:last-child)::before {
                 position: absolute;
-                bottom: 0;
+                bottom: -2px;
                 right: auto;
                 left: auto;
                 width: 225px;
@@ -101,6 +115,8 @@ a {
                 display: block; }
               .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop ul li:hover {
                 background-color: #3c580e; }
+                .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop ul li:hover a {
+                  font-weight: bold; }
           .header .main-content-header .menu-nav-header .menu-item .menu-child .menu-drop::before {
             left: 41px;
             width: 0;
@@ -112,6 +128,8 @@ a {
             top: -10px;
             /* right: 49px; */
             content: ' '; }
+      .header .main-content-header .menu-nav-header .menu-item:hover {
+        font-weight: bold; }
       .header .main-content-header .menu-nav-header .menu-item:hover::before {
         left: 0;
         right: 0;
@@ -144,6 +162,16 @@ a {
         /* IE6-9 */ }
         .header .main-content-header .menu-nav-header .menu-item:hover .menu-child {
           display: block; }
+  .header .background-h {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 113px;
+    background: transparent;
+    right: 0; }
+    .header .background-h img {
+      width: 100%;
+      height: 110%; }
 
 .slider {
   width: 100%;
@@ -154,7 +182,8 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    position: relative; }
+    position: relative;
+    box-shadow: 0px 0px 4px 2px #100e0e; }
     .slider .slider-content .desciption-slider {
       position: absolute;
       bottom: 66px;
@@ -191,23 +220,27 @@ a {
           opacity: 1;
           font-size: 0;
           background: url(../images/icon/icon_dot_active.png) no-repeat 4px 4px; }
-    .slider .slider-content .border-bottom-slider {
-      position: absolute;
-      right: 0;
-      left: 0;
-      bottom: -9px;
-      height: 15px; }
 
 .main {
   width: 100%;
   display: block;
-  background-color: #f1f1f1; }
+  padding-bottom: 55px;
+  background-color: #f1f1f1;
+  z-index: 99;
+  position: relative; }
   .main .main-content {
     padding: 38px 30px 40px 30px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    position: relative; }
+    .main .main-content .border-bottom-slider {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: -6px;
+      height: 15px; }
     .main .main-content .main-content-1 {
       display: flex;
       justify-content: space-between; }
@@ -282,7 +315,7 @@ a {
                 .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-1 .item-des-1 .item-title-1 a {
                   font-family: Arial;
                   font-size: 14px;
-                  color: rgb 61, 70, 139;
+                  color: #565656;
                   line-height: 18px;
                   font-weight: bold;
                   overflow: hidden;
@@ -311,7 +344,7 @@ a {
                 -webkit-box-orient: vertical;
                 font-size: 13px;
                 font-weight: 600;
-                color: rgb 61, 70, 139;
+                color: #3d468b;
                 font-family: Arial, Helvetica, sans-serif; }
               .main .main-content .main-content-1 .main-col-1 .category-news .news-content .news-item-2 .content-item-2 {
                 margin-top: 17px;
@@ -327,6 +360,7 @@ a {
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 12px;
                     line-height: 18px;
+                    color: #787878;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 5;
@@ -796,5 +830,78 @@ a {
             .main .main-content .main-content-1 .main-col-3 .content-5 .list-item .detail .link-item a {
               font-size: 13px;
               font-family: Roboto; }
+    .main .main-content .main-content-2 .title-content-2 {
+      padding-bottom: 25px;
+      position: relative; }
+      .main .main-content .main-content-2 .title-content-2 h2 {
+        margin: 20px 0 0 0;
+        text-align: center;
+        font-size: 24px;
+        font-family: Roboto;
+        font-weight: 600;
+        color: #3d468b; }
+      .main .main-content .main-content-2 .title-content-2 .icon-title {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center; }
+    .main .main-content .main-content-2 .slider-content {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px; }
+      .main .main-content .main-content-2 .slider-content .list-item-content-2 {
+        width: 1020px; }
+      .main .main-content .main-content-2 .slider-content .btn-slider-2 {
+        position: absolute;
+        top: 35px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer; }
+      .main .main-content .main-content-2 .slider-content .btn-prev-2 {
+        left: 0; }
+      .main .main-content .main-content-2 .slider-content .btn-next-2 {
+        right: 0; }
+
+footer .footer-1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #3c3431; }
+  footer .footer-1 .footer-content-1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+    footer .footer-1 .footer-content-1 .logo-footer {
+      margin-right: 20px;
+      margin-left: 20px; }
+    footer .footer-1 .footer-content-1 .footer-contact .name-company {
+      font-size: 24px;
+      font-family: Roboto;
+      color: white; }
+    footer .footer-1 .footer-content-1 .footer-contact ul {
+      padding: 0;
+      list-style: none; }
+      footer .footer-1 .footer-content-1 .footer-contact ul li {
+        font-family: Roboto;
+        color: white;
+        font-size: 14px; }
+      footer .footer-1 .footer-content-1 .footer-contact ul li:not(:last-child) {
+        margin-bottom: 10px; }
+footer .footer-2 {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .footer-2 .item-footer {
+    font-size: 11px;
+    color: #6d6d6d;
+    font-family: Arial, Helvetica, sans-serif; }
+  footer .footer-2 .item-footer:not(:first-child) {
+    margin-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */

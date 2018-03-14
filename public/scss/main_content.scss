@@ -76,13 +76,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', end
 .main{
     width: 100%;
     display: block;
+    padding-bottom: 55px;
     background-color:rgb(241,241,241);
+    z-index: 99;
+    position: relative;
     .main-content{
         padding: 38px 30px 40px 30px;
         margin-left: auto;
         margin-right:auto;
         background-color: white;
         box-sizing:border-box;
+        position: relative;
+        .border-bottom-slider{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top:-6px;
+            height: 15px;
+        }
    
         .main-content-1{
             display: flex;
@@ -112,7 +123,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', end
                             a{
                                 font-family: Arial;
                                 font-size: 14px;
-                                color: rgb (61,70,139);
+                                color: rgb(86,86,86);
                                 line-height: 18px;
                                 font-weight: bold;
                                 @include limitLineText(2);
@@ -138,7 +149,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', end
                             @include limitLineText(1);
                             font-size: 13px;
                             font-weight: 600;
-                            color: rgb (61,70,139);
+                            color: rgb(61,70,139);
                             font-family: Arial, Helvetica, sans-serif;
                         }
                     }
@@ -157,6 +168,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', end
                                 font-family: Arial, Helvetica, sans-serif;
                                 font-size: 12px;
                                 line-height: 18px;
+                                color:rgb(120,120,120);
                                 @include limitLineText(5);
                             }
                         }
@@ -711,6 +723,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353e79', end
                        }
                    }
                }
+            }
+        }
+    }
+    .main-content-2{
+        .title-content-2{
+            padding-bottom: 25px;
+            position: relative;
+            h2{
+                margin: 20px 0 0 0;
+                text-align: center;
+                font-size: 24px;
+                font-family: Roboto;
+                font-weight: 600;
+                color:rgb(61,70,139);
+            }
+            .icon-title{
+                position: absolute;
+                right: 0;
+                left: 0;
+                bottom:0;
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+        .slider-content{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top:20px;
+            .list-item-content-2{
+                width:1020px;
+             .item{
+                //  margin-right: 30px;
+             }
+            }
+            .btn-slider-2{
+                position: absolute;
+                top:35px;
+                background-color: transparent;
+                border:none;
+                outline: none;
+                cursor: pointer;
+            }
+            .btn-prev-2{
+                left: 0;
+            }
+            .btn-next-2{
+                right: 0;
             }
         }
     }
