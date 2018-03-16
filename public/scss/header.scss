@@ -21,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
     .select-langue {
+      z-index: 70;
       position: absolute;
       top: 10px;
       right: 0;
@@ -70,7 +71,7 @@
           left: -5px;
           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#21a725+0,077509+100 */
           .menu-drop {
-            box-shadow: 0px 2px 17px 1px #191823;
+            box-shadow: 0px 0px 8px 1px #00000066;
             position: relative;
             margin-top: 18px;
 
@@ -103,7 +104,7 @@
                 right: auto;
                 left: auto;
                 width: 225px;
-                height: 2px;
+                height: 1px;
                 background-color: rgb(89, 175, 92);
                 content: ' ';
                 display: block;
@@ -117,6 +118,7 @@
               li:hover {
                 background-color: rgb(60, 88, 14);
                 a {
+
                   font-weight: bold;
                 }
               }
@@ -137,10 +139,12 @@
           }
         }
       }
-      .menu-item:hover {
+      .menu-item:hover:first-child {
         font-weight: bold;
+        text-shadow: 0 0 0 1px #cccc;
       }
       .menu-item:hover::before {
+        text-shadow: 0 1px 1px #cccc;
 
         left: 0;
         right: 0;
@@ -158,6 +162,8 @@
 
       }
       .menu-item:hover {
+        //padding-left: 17.5px;
+        //padding-right: 17.5px;
         .menu-child {
           display: block;
         }

@@ -82,7 +82,7 @@
   z-index: 99;
   position: relative;
   .main-content {
-    box-shadow: 0 0 9px 1px #afaaaa;
+    box-shadow: 0 0 8px 1px #afaaaa29;
     padding: 38px 30px 40px 30px;
     margin-left: auto;
     margin-right: auto;
@@ -93,8 +93,24 @@
       position: absolute;
       right: 0;
       left: 0;
-      top: -6px;
-      height: 15px;
+      top: 1px;
+      height: 7px;
+
+    }
+    .border-bottom-slider::before {
+      position: absolute;
+      content: ' ';
+      top: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a0c0f+0,ffffff+14,02080c+51,ffffff+85,202d1e+100&0.12+0,0.76+15,0.13+51,0.7+85,0.12+100 */
+      background: -moz-linear-gradient(left, rgba(10, 12, 15, 0.12) 0%, rgba(255, 255, 255, 0.72) 14%, rgba(248, 248, 248, 0.76) 15%, rgba(2, 8, 12, 0.13) 51%, rgba(255, 255, 255, 0.7) 85%, rgba(32, 45, 30, 0.12) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, rgba(10, 12, 15, 0.12) 0%, rgba(255, 255, 255, 0.72) 14%, rgba(248, 248, 248, 0.76) 15%, rgba(2, 8, 12, 0.13) 51%, rgba(255, 255, 255, 0.7) 85%, rgba(32, 45, 30, 0.12) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, rgba(10, 12, 15, 0.12) 0%, rgba(255, 255, 255, 0.72) 14%, rgba(248, 248, 248, 0.76) 15%, rgba(2, 8, 12, 0.13) 51%, rgba(255, 255, 255, 0.7) 85%, rgba(32, 45, 30, 0.12) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1f0a0c0f', endColorstr='#1f202d1e', GradientType=1); /* IE6-9 */
+
     }
 
     .main-content-1 {
@@ -112,10 +128,12 @@
               justify-content: flex-start;
               .item-thumbnail-1 {
                 width: 195px;
+                height: 118px;
                 margin-right: 10px;
                 a {
                   img {
                     width: 100%;
+                    height: 100%;
                   }
                 }
               }
@@ -125,7 +143,7 @@
                   a {
                     font-family: Arial;
                     font-size: 14px;
-                    color: rgb(86, 86, 86);
+                    color: #3d468b;
                     line-height: 18px;
                     font-weight: bold;
                     @include limitLineText(2);
@@ -157,12 +175,55 @@
                 }
               }
               .content-item-2 {
-                margin-top: 17px;
+                margin-top: 5px;
                 display: flex;
                 justify-content: flex-start;
                 .thumbnail-item-2 {
                   width: 140px;
+                  height: 84px;
                   margin-right: 10px;
+                  img{
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .des-2 {
+                  width: 340px;
+                  p {
+                    margin: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: rgb(120, 120, 120);
+                    @include limitLineText(5);
+                  }
+                }
+              }
+            }
+            .news-item-2-col-1 {
+              margin-top: 13px;
+              margin-bottom: 11px;
+              .item-title-2 {
+                a {
+                  @include limitLineText(1);
+                  font-size: 13px;
+                  font-weight: 600;
+                  color: rgb(61, 70, 139);
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+              }
+              .content-item-2 {
+                margin-top: 10px;
+                display: flex;
+                justify-content: flex-start;
+                .thumbnail-item-2 {
+                  width: 140px;
+                  height: 84px;
+                  margin-right: 10px;
+                  img{
+                    width: 100%;
+                    height: 100%;
+                  }
                 }
                 .des-2 {
                   width: 340px;
@@ -208,7 +269,7 @@
                 .title-item-gr {
                   padding-top: 7px;
                   padding-bottom: 7px;
-                  border-bottom: 1px dotted #cccc;
+
                   a {
                     padding-left: 10px;
                     font-family: Arial;
@@ -217,12 +278,16 @@
                     position: relative;
                     display: block;
                     line-height: 16px;
+                    @include limitLineText(2);
                     img {
                       position: absolute;
                       top: 5px;
                       left: 0px;
                     }
                   }
+                }
+                .title-item-gr:not(:last-child) {
+                  border-bottom: 1px dotted #cccc;
                 }
 
               }
@@ -267,10 +332,11 @@
                     position: relative;
                     display: block;
                     line-height: 16px;
+                    @include limitLineText(2);
                     img {
                       position: absolute;
                       top: 5px;
-                      left: 0px;
+                      left: 0;
                     }
                   }
                 }
@@ -308,8 +374,11 @@
             text-align: center;
             color: white;
             .content-3 {
+              width: 270px;
+              height: 196px;
               img {
                 width: 100%;
+                height: 100%;
               }
 
             }
@@ -320,12 +389,18 @@
               justify-content: center;
               align-items: center;
               .title-pro {
-                font-size: 13px;
-                font-family: Arial;
-                font-weight: 600;
-                margin-bottom: 8px;
+                a{
+                  font-size: 13px;
+                  font-family: Tahoma;
+                  font-weight: 600;
+                  @include limitLineText(1);
+                  color: white;
+                }
+
               }
               .des-pro {
+                margin-top:8px;
+                @include  limitLineText(1);
                 font-size: 12px;
                 font-family: Tahoma;
               }
@@ -337,16 +412,34 @@
           padding-right: 10px;
           .item-news-1 {
             margin-top: 5px;
-            .thumnail-news {
+            .thumbnail-news {
+              height: 130px;
+              width: 270px;
               a {
+                position: relative;
                 img {
+                  height: 100%;
                   width: 100%;
                 }
+              }
+              .icon-play {
+                position: absolute;
+                /* display: flex; */
+                /* align-items: center; */
+                /* justify-content: center; */
+                width: 56px;
+                /* top: 0; */
+                left: 105px;
+                /* right: auto; */
+                /* z-index: 99999; */
+                bottom: 40px;
+
               }
             }
             .title {
               margin-top: 8px;
               a {
+                @include limitLineText(2);
                 font-weight: 600;
                 font-family: Arial;
                 font-size: 14px;
@@ -388,6 +481,7 @@
         }
         .content-3 {
           .thumbnail {
+            position: relative;
             margin-top: 7px;
             a {
               img {
@@ -395,9 +489,24 @@
               }
             }
           }
+          .thumbnail::before {
+            position: absolute;
+            content: ' ';
+            top: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#050505+1,050505+59,000000+100&0+0,0.08+58,0.39+100 */
+            background: -moz-linear-gradient(top, rgba(5, 5, 5, 0) 0%, rgba(5, 5, 5, 0) 1%, rgba(5, 5, 5, 0.08) 58%, rgba(5, 5, 5, 0.09) 59%, rgba(0, 0, 0, 0.39) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(5, 5, 5, 0) 0%, rgba(5, 5, 5, 0) 1%, rgba(5, 5, 5, 0.08) 58%, rgba(5, 5, 5, 0.09) 59%, rgba(0, 0, 0, 0.39) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(5, 5, 5, 0) 0%, rgba(5, 5, 5, 0) 1%, rgba(5, 5, 5, 0.08) 58%, rgba(5, 5, 5, 0.09) 59%, rgba(0, 0, 0, 0.39) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00050505', endColorstr='#63000000', GradientType=0); /* IE6-9 */
+          }
           .des-question {
             margin-top: 10px;
             p {
+              @include limitLineText(2);
               margin: 0;
               font-size: 13px;
               font-family: Arial;
@@ -409,14 +518,18 @@
             margin-top: 15px;
             display: flex;
             justify-content: space-between;
-            button {
+
+            a button {
               width: 112px;
               height: 33px;
               font-size: 13px;
               font-family: arial;
               color: white;
+              border: 1px solid;
+              cursor: pointer;
+
             }
-            button:first-child {
+            a:first-child button {
               border-color: rgb(168, 6, 0);
               /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb2c26+0,9b0702+100 */
               background: rgb(203, 44, 38); /* Old browsers */
@@ -425,7 +538,7 @@
               background: linear-gradient(to bottom, rgba(203, 44, 38, 1) 0%, rgba(155, 7, 2, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
               filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cb2c26', endColorstr='#9b0702', GradientType=0); /* IE6-9 */
             }
-            button:last-child {
+            a:last-child button {
               border-color: rgb(46, 49, 74);
               /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#505888+0,3a3e5d+99 */
               background: rgb(80, 88, 136); /* Old browsers */
@@ -454,7 +567,7 @@
               font-family: "Roboto Condensed";
               font-weight: 300;
             }
-            height: 40px;
+            height: 30px;
             border-bottom: 1px solid #d7d7d7;
           }
           .list-item {
@@ -465,9 +578,12 @@
               justify-content: flex-start;
               .thumbnail {
                 margin-right: 10px;
+                width: 100px;
+                height: 60px;
                 a {
                   img {
                     width: 100%;
+                    height: 100%;
                   }
                 }
               }
@@ -504,6 +620,11 @@
             border: none;
             outline: none;
             width: 240px;
+            color: rgb(195, 195, 195);
+          }
+          input::placeholder {
+            color: rgb(195, 195, 195);
+            font-size: 11px;
           }
         }
         .table-price {
@@ -517,7 +638,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 40px;
+            height: 33px;
             border-bottom: 1px solid rgb(215, 215, 215);
 
             p {
@@ -529,38 +650,41 @@
           }
           .list-item-price {
 
-            padding: 10px;
+            padding: 5px 10px 10px 10px;
             .item {
               border-bottom: 1px solid #d7d7d7;
               padding-top: 10px;
               padding-bottom: 10px;
-              margin-bottom: 10px;
               display: flex;
               justify-content: space-between;
               font-size: 13px;
               font-weight: 100;
               font-family: Arial, Helvetica, sans-serif;
               a {
-
+                @include limitLineText(1);
                 color: rgb(103, 103, 103);
               }
               span {
                 color: rgb(103, 103, 103);
+                font-weight: bold;
               }
             }
             .show-more {
               display: flex;
+              margin-top: 7px;
               justify-content: flex-end;
               a {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 11px;
                 font-style: italic;
+                color: rgb(62, 72, 143);
+                font-weight: 300;
               }
             }
           }
         }
         .news-col-3 {
-          margin-top: 10px;
+          margin-top: 15px;
           border: 1px solid;
           border-top-color: rgb(52, 60, 118);
           border-right-color: rgb(215, 215, 215);
@@ -568,7 +692,7 @@
           border-bottom-color: rgb(215, 215, 215);
           .title-col-news {
             border-bottom: 1px solid rgb(215, 215, 215);
-            height: 40px;
+            height: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -582,9 +706,12 @@
           .item-news {
             padding: 10px;
             .thumbnail {
+              height: 131px;
+              width: 268px;
               a {
                 img {
                   width: 100%;
+                  height: 100%;
                 }
               }
             }
@@ -604,6 +731,8 @@
                   font-family: Arial;
                   color: #787878;
                   margin: 5px 0 0 0;
+                  @include limitLineText(4);
+                  line-height: 18px;
                 }
               }
             }
@@ -611,15 +740,15 @@
 
         }
         .content-table-2 {
-          margin-top: 10px;
+          margin-top: 15px;
           border: 1px solid;
-          border-top-color: rgb(52, 60, 118);
+          border-top-color: rgb(228, 51, 45);
           border-right-color: rgb(215, 215, 215);
           border-left-color: rgb(215, 215, 215);
           border-bottom-color: rgb(215, 215, 215);
           .title-table {
             border-bottom: 1px solid rgb(215, 215, 215);
-            height: 40px;
+            height: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -631,7 +760,7 @@
             }
           }
           .table-content {
-            padding: 10px;
+            padding: 10px 3px 3px 3px;
             table {
               width: 100%;
               border-collapse: collapse;
@@ -639,33 +768,34 @@
               td, th {
                 font-size: 12px;
                 font-family: Arial, Helvetica, sans-serif;
-                border: 1px solid rgb(77, 77, 77);
+                border: 1px solid rgb(215, 215, 215);
                 padding: 5px;
                 text-align: center;
                 font-weight: 500;
+                color: rgb(77, 77, 77);
               }
             }
-            span{
+            span {
               margin-top: 7px;
-              i{
-                font-family:Arial;
+              i {
+                font-family: Arial;
                 font-size: 12px;
-                color:rgb(151,151,151);
+                color: rgb(151, 151, 151);
 
               }
             }
           }
         }
         .content-4 {
-          margin-top: 10px;
+          margin-top: 15px;
           border: 1px solid;
-          border-top-color: rgb(52, 60, 118);
+          border-top-color: rgb(228, 51, 45);
           border-right-color: rgb(215, 215, 215);
           border-left-color: rgb(215, 215, 215);
           border-bottom-color: rgb(215, 215, 215);
           .title {
             border-bottom: 1px solid rgb(215, 215, 215);
-            height: 40px;
+            height: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -690,15 +820,15 @@
           }
         }
         .content-5 {
-          margin-top: 10px;
+          margin-top: 15px;
           border: 1px solid;
-          border-top-color: rgb(52, 60, 118);
+          border-top-color:#e4332d;
           border-right-color: rgb(215, 215, 215);
           border-left-color: rgb(215, 215, 215);
           border-bottom-color: rgb(215, 215, 215);
           .title {
             border-bottom: 1px solid rgb(215, 215, 215);
-            height: 40px;
+            height: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -721,6 +851,7 @@
                 a {
                   img {
                     width: 100%;
+                    height: 100%;
                   }
                 }
               }
@@ -732,7 +863,7 @@
                     font-weight: 600;
                     color: black;
                     font-family: "Roboto Bold";
-                    @include  limitLineText(2);
+                    @include limitLineText(2);
                   }
                 }
                 .link-item {
@@ -743,7 +874,7 @@
                 }
               }
             }
-            .item:not(:last-child){
+            .item:not(:last-child) {
               margin-bottom: 15px;
             }
           }
@@ -755,7 +886,7 @@
         padding-bottom: 25px;
         position: relative;
         h2 {
-          margin: 20px 0 0 0;
+          margin: 67px 0 0 0;
           text-align: center;
           font-size: 24px;
           font-family: "Roboto Bold";
@@ -780,8 +911,8 @@
         .list-item-content-2 {
           width: 1020px;
           .item {
-              margin-right: 15px;
-              margin-left: 15px;
+            margin-right: 15px;
+            margin-left: 15px;
           }
         }
         .btn-slider-2 {
